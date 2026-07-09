@@ -1,6 +1,6 @@
 Gem::Specification::new do |s|
   s.name = 'oui-offline'
-  s.version = '1.2.8'
+  s.version = '1.2.9'
   s.summary = 'Organizationally Unique Idenitfiers (OUI)'
   s.description = 'Organizationally Unique Idenitfiers (OUI) offline database'
   s.license = 'MIT'
@@ -32,7 +32,7 @@ Gem::Specification::new do |s|
     s.add_dependency 'jdbc-sqlite3', '~> 3.8'
   else
     s.platform = Gem::Platform::RUBY
-    s.add_dependency 'sqlite3', '~> 1.3'
+    s.add_dependency 'sqlite3', '>= 1.3', '< 3'
   end
   s.add_development_dependency 'rake', '~> 10'
   s.add_development_dependency 'minitest', '~> 5.0'
